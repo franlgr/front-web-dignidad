@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "nuxt",
         "build": "nuxt build",
-        "generate": "npm run generate",
+        "generate": "nuxt generate",
         "start": "nuxt build",
         "heroku-postbuild": "npm run build"
     },
