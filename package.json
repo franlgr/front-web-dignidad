@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
+        "update-all": "git add . && git commit -m 'update' & git push",
         "dev": "nuxt",
         "build": "nuxt build",
-        "generate": "npm run generate",
-        "start": "nuxt build",
+        "start": "nuxt start",
         "heroku-postbuild": "npm run build"
     },
     "dependencies": {
