@@ -20,28 +20,28 @@
                    <article-uno class="articles"></article-uno>
               </div>
                  <div class="content3A-2">
-                    <a href="/"><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
+                    <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
               </div>
               <!--Imagen-->
                  <div class="content3A-3">
                     <article-dos class="articles"></article-dos>
               </div>
                  <div class="content3A-4">
-                    <a href="/"><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
+                    <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
               </div>
               <!--Imagen-->
                  <div class="content3A-5">
                     <article-tres class="articles"></article-tres>
               </div>
                  <div class="content3A-6">
-                     <a href="/"><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
+                     <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
                 </div>
               <!--Imagen-->
                   <div class="content3A-7">
                      <article-cuatro class="articles"></article-cuatro>
                </div>
                   <div class="content3A-8">
-                     <a href="/"><p class="texts">Las Organizaciones populares estamos construyendo territorio!</p></a>
+                     <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio!</p></a>
                </div>
            </div>
            </div>
