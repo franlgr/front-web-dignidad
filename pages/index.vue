@@ -65,6 +65,12 @@ export default {
 
 <style>
 
+.titulaNav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .content3 {
   position: -webkit-sticky;
   position: sticky;
