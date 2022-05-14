@@ -16,9 +16,9 @@
                     <br>
                     <div>
                         <p class="text">Registro de lo que fue el taller de Bioinsumos del Frente Rural La Dignidad Córdoba.</p>
-                    <video width="800" controls>
+                    <!-- <video width="800" controls>
                     <source src="../img/F2mp_download_sd.mp4" type="video/mp4">
-                </video>
+                </video> -->
                 </div>
                 <br>
                 
@@ -39,7 +39,7 @@
 		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
 		<div class="carousel-item absolute opacity-0" style="height:auto;">
 			<div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">
-                <img src="../img/crsimg-2.jpg" alt="">
+                <img src="../img/crsimg-1.jpg" alt="">
             </div>
 		</div>
 		<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
