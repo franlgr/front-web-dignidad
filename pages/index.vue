@@ -225,17 +225,17 @@ export default {
       background-position: 0 0,10px 10px;
  }
 
- /* @media screen and (max-width: 500px ) {
+ @media screen and (max-width: 500px ) {
 
    .container {
   
   display:grid;
-  grid-template-columns: 2fr 11fr ;
+  grid-template-columns: 20% 80%;
   grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: "content1  content2"
 }
    
- } */
+ }
 
 </style>
