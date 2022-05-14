@@ -264,6 +264,16 @@ export default {
                        "content3"
                        "content1"
 }
+.container .content1 {
+  grid-area: content1;
+}
+.container .content2 {
+  grid-area: content2;
+}
+.container .content3 {
+  grid-area: content3;
+}
+
 .content1 .cont1A {
   display:grid;
   grid-template-columns: auto auto;
