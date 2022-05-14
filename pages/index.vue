@@ -70,6 +70,7 @@ export default {
 
 
 <style>
+
 .content3A-2 {
   border: 5px solid violet;
   border-radius: 20px;
@@ -96,11 +97,11 @@ export default {
   top: 0;
 }
 
-.content3 {
+/* .content3 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
+} */
 
 .titulaNav {
   text-align: center;
@@ -200,11 +201,11 @@ export default {
 
 
 /*3A*/
- .content3A {
-   /* margin: 10px; */
-   padding:10px;
+.content3A {
+   margin: 5px;
+   padding:50px;
   display: grid;
-  row-gap: 25%;
+  grid-gap: 20px;
   grid-template-columns: auto 65%;
   /* grid-template-rows: 1fr; */
   grid-template-areas: "content3A-1   content3A-2"
@@ -256,11 +257,12 @@ export default {
    .container {
   
   display:grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 80% auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
   grid-gap: 20px;
-  grid-template-areas: "content2  content2 content3"
-                       "content1  content1 content1"
+  grid-template-areas: "content2"
+                       "content3"
+                       "content1"
 }
 .content1 .cont1A {
   display:grid;
@@ -276,5 +278,44 @@ export default {
  .content1 .cont1A .cont1A-2 {
   grid-area: cont1A-2;
 }
+
+.content3A {
+   /* margin: 10px; */
+   /* padding:10px; */
+  display: grid;
+  /* row-gap: 25%; */
+  grid-template-columns: auto 70;
+  grid-template-rows: auto;
+  grid-template-areas: "content3A-1   content3A-2"
+                       "content3A-3   content3A-4"
+                       "content3A-5   content3A-6"
+                       "content3A-7   content3A-8"
+}
+.content3A .content3A-1 {
+  
+  grid-area: content3A-1;
+}
+.content3A .content3A-2 {
+  grid-area: content3A-2;
+}
+.content3A .content3A-3 {
+  grid-area: content3A-3;
+}
+.content3A .content3A-4 {
+  grid-area: content3A-4;
+}
+.content3A .content3A-5 {
+  grid-area: content3A-5;
+}
+.content3A .content3A-6 {
+  grid-area: content3A-6;
+}
+.content3A .content3A-7 {
+  grid-area: content3A-7;
+}
+.content3A .content3A-8 {
+  grid-area: content3A-8;
+}
+
  }
 </style>
