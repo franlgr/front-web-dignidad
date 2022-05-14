@@ -276,10 +276,11 @@ export default {
 
 .content1 .cont1A {
   display:grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-gap:5px;
-  grid-template-areas: "cont1A-1  cont1A-2"
+  grid-template-areas: "cont1A-1"
+                       "cont1A-2"
 
 }
  .content1 .cont1A .cont1A-1 {
