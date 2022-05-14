@@ -230,7 +230,7 @@ export default {
    .container {
   
   display:grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: auto auto;
   grid-template-rows: auto;
   grid-gap: 20px;
   grid-template-areas: "content1  content2"
