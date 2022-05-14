@@ -230,10 +230,11 @@ export default {
    .container {
   
   display:grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80% 20%;
   grid-gap: 20px;
-  grid-template-areas: "content1  content2"
+  grid-template-areas: "content2  content2 content3"
+                       "content1  content1 content1"
 }
    
  }
