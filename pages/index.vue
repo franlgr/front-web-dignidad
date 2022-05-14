@@ -262,7 +262,7 @@ export default {
   grid-template-areas: "content2  content2 content3"
                        "content1  content1 content1"
 }
-.containter .content1 .cont1A {
+.content1 .cont1A {
   display:grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
@@ -270,10 +270,10 @@ export default {
   grid-template-areas: "cont1A-1  cont1A-2"
 
 }
-.containter .content1 .cont1A .cont1A-1 {
+ .content1 .cont1A .cont1A-1 {
   grid-area: cont1A-1;
 }
-.containter .content1 .cont1A .cont1A-2 {
+ .content1 .cont1A .cont1A-2 {
   grid-area: cont1A-2;
 }
  }
