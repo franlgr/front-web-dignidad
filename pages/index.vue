@@ -6,6 +6,12 @@
 
             <div class="content1">
                  <logo-left class="logo"></logo-left>
+                 <div class="cont1A">
+                   <div class="cont1A-1"></div>
+                   <div class="cont1A-2">
+                     <text-foot></text-foot>
+                   </div>
+                 </div>
               </div>
 
                <div class="content2" style="overflow: auto; width: 800px; height: 800px">
@@ -64,6 +70,25 @@ export default {
 
 
 <style>
+.content3A-2 {
+  border: 5px solid violet;
+  border-radius: 20px;
+}.content3A-4 {
+  border: 5px solid yellow;
+  border-radius: 20px;
+}.content3A-6 {
+  border: 5px solid green;
+  border-radius: 20px;
+}
+.content3A-8 {
+  border: 5px solid orange;
+  border-radius: 20px;
+}
+
+.content1  {
+  border: 5px solid #5f7044;
+  border-radius: 20px;
+}
 
 .titulaNav {
   position: -webkit-sticky;
@@ -124,6 +149,7 @@ export default {
 }
 
 .logo {
+  
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -225,18 +251,30 @@ export default {
       background-position: 0 0,10px 10px;
  }
 
- @media screen and (max-width: 500px ) {
+ @media screen and (max-width: 600px ) {
 
    .container {
   
   display:grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 80% auto;
   grid-gap: 20px;
   grid-template-areas: "content2  content2 content3"
                        "content1  content1 content1"
 }
-   
- }
+.containter .content1 .cont1A {
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap:5px;
+  grid-template-areas: "cont1A-1  cont1A-2"
 
+}
+.containter .content1 .cont1A .cont1A-1 {
+  grid-area: cont1A-1;
+}
+.containter .content1 .cont1A .cont1A-2 {
+  grid-area: cont1A-2;
+}
+ }
 </style>
