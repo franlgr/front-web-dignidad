@@ -7,6 +7,16 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
+        function() {
+            return {
+                script: [{
+                    'data-ad-client': "ca-pub-8627466046363756",
+                    async: true,
+                    src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                }],
+            }
+        },
+
         title: 'mp-rural-dignidad',
         htmlAttrs: {
             lang: 'en',
@@ -36,14 +46,16 @@ export default {
         '@nuxtjs/eslint-module',
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
+        '@nuxtjs/google-adsense'
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        '@nuxtjs/google-adsense'
         // Simple usage
-        ['@nuxtjs/google-adsense', {
-            id: 'ca-pub-8627466046363756'
-        }]
+        // ['@nuxtjs/google-adsense', {
+        //     id: 'ca-pub-8627466046363756'
+        // }]
     ],
 
     // https://go.nuxtjs.dev/axios
