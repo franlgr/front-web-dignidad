@@ -6,12 +6,7 @@
 
             <div class="content1">
                  <logo-left class="logo"></logo-left>
-                 <div class="cont1A">
-                   <div class="cont1A-1"></div>
-                   <div class="cont1A-2">
-                     <text-foot></text-foot>
-                   </div>
-                 </div>
+                  <text-foot></text-foot>
               </div>
 
                <div class="content2" style="overflow: auto; width: 800px; height: 800px">
