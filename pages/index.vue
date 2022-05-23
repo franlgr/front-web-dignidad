@@ -258,15 +258,12 @@ export default {
    .container {
   
   display:grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
-  grid-gap: 20px;
-  grid-template-areas: "content2"
-                       "content3"
-                       "content1"
-}
-.container .content1 {
-  grid-area: content1;
+  /* grid-gap: 20px; */
+  grid-template-areas: "content2  content2"
+                       "content3  content3"
+                       "content1  content1"
 }
 .container .content2 {
   grid-area: content2;
@@ -274,6 +271,11 @@ export default {
 .container .content3 {
   grid-area: content3;
 }
+.container .content1 {
+  grid-area: content1;
+}
+
+
 
  }
 </style>
