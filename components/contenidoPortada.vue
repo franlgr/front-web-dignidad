@@ -2,16 +2,15 @@
 
 <template>
     <div>
-          <img class="imgLD" src="https://scontent.faep24-1.fna.fbcdn.net/v/t39.30808-6/272670843_481224416912367_8073224714767359352_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=e3f864&_nc_ohc=u4wIalzEtagAX8eTTau&_nc_ht=scontent.faep24-1.fna&oh=00_AT8Tsr5Jl-CfHdhxlOCMdgVpdSVcwtUPwmv-JZdXk5oPeQ&oe=6280033C" alt="">
+          <img class="imgLD" src="../img/portPh1.jpg" alt="">
                    <br>
-         <p class="text">Reunión de la Mesa Federal con la participación de todas las provincias Un encuentro para profundizar la organización y los acuerdos nacionales.</p>
+         <p class="text">Seguimos en la Expo Lactea, conversando junto a compañerxs acerca de la importancia de una #empresanacionaldealimentos que posicione al estado como el gran socio de los pequeños productores y productoras locales y regionales. Vamos caminando hacia la #soberaniaalimentaria.</p>
                                     
-                    <img src="https://scontent.faep24-1.fna.fbcdn.net/v/t39.30808-6/274918516_502110394823769_4282443027542030474_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=9267fe&_nc_ohc=w7Bfia3UXBgAX8P_m3t&tn=HKeYPio1eF9v4o6y&_nc_ht=scontent.faep24-1.fna&oh=00_AT-wkOnrRqEYto-mom_6ALbxgkJz5GxpK1le1nLVziavJw&oe=62812E0B" alt="">
+                    <img class="" src="../img/portPh2.jpg" alt="">
                     <br>
                     <div>
-                        <p class="text">Realizaron taller de Formación en Agroecología en Punilla Norte: «Tenemos tierra, agua, saberes, respeto y alegría»
-                                El sábado 29 de enero el Frente Rural MP La Dignidad Confluencia Capilla del Monte llevó a cabo su primer Evento regional de Agroecología orientado a la preparación comunitaria de bioinsumos para la producción de alimentos saludables.</p>
-                      <img src="https://scontent.faep24-1.fna.fbcdn.net/v/t39.30808-6/273149004_4849805251772480_6193160453708936390_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=106&ccb=1-6&_nc_sid=730e14&_nc_ohc=lU-ldYjKEkUAX_C9oF1&tn=HKeYPio1eF9v4o6y&_nc_ht=scontent.faep24-1.fna&oh=00_AT9uAr5khJOBO1tn6-vxiPtrC4IV3qvxu54SHNExtt-h8A&oe=628130A4" alt="">
+                        <p class="text">En la.presentacion del proyecto de ley sobre mercados de cercania ( 400 minimercados centrales) de la autoría de Daniel Arroyo. Una de las herramientas para capturarles renta a los monopolios, bajar los precios de los alimentos, ahorrar en logistica y fortalecer las economias locales y regionales..</p>
+                      <img src="../img/portPh3.jpg" alt="">
                     </div>
                     <br>
                     <div>
