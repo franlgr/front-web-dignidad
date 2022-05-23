@@ -275,59 +275,5 @@ export default {
   grid-area: content3;
 }
 
-.content1 .cont1A {
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-gap:5px;
-  grid-template-areas: "cont1A-1"
-                       "cont1A-2"
-
-}
- .content1 .cont1A .cont1A-1 {
-  grid-area: cont1A-1;
-}
- .content1 .cont1A .cont1A-2 {
-  grid-area: cont1A-2;
-}
-
-.content3A {
-   /* margin: 10px; */
-   /* padding:10px; */
-  display: grid;
-  /* row-gap: 25%; */
-  grid-template-columns: auto 70;
-  grid-template-rows: auto;
-  grid-template-areas: "content3A-1   content3A-2"
-                       "content3A-3   content3A-4"
-                       "content3A-5   content3A-6"
-                       "content3A-7   content3A-8"
-}
-.content3A .content3A-1 {
-  
-  grid-area: content3A-1;
-}
-.content3A .content3A-2 {
-  grid-area: content3A-2;
-}
-.content3A .content3A-3 {
-  grid-area: content3A-3;
-}
-.content3A .content3A-4 {
-  grid-area: content3A-4;
-}
-.content3A .content3A-5 {
-  grid-area: content3A-5;
-}
-.content3A .content3A-6 {
-  grid-area: content3A-6;
-}
-.content3A .content3A-7 {
-  grid-area: content3A-7;
-}
-.content3A .content3A-8 {
-  grid-area: content3A-8;
-}
-
  }
 </style>
