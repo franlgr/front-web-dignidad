@@ -40,9 +40,15 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
-        // https://go.nuxtjs.dev/axios
-        // '@nuxtjs/axios',
+        // Simple usage
+        ['@nuxtjs/google-adsense', {
+            id: 'ca-pub-8627466046363756'
+        }]
     ],
+
+    // https://go.nuxtjs.dev/axios
+    // '@nuxtjs/axios',
+
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {
