@@ -6,10 +6,10 @@
 
             <div class="content1">
                  <logo-left class="logo"></logo-left>
-                  <text-foot></text-foot>
+                  
               </div>
 
-               <div class="content2">
+               <div class="content2" style="overflow: auto; width: 100%; height: 24.5%;">
                    <p class="titulaNav">Movimiento Popular La Dignidad</p>
                    <contenido-portada></contenido-portada>
               </div>
@@ -19,30 +19,15 @@
               <div class="content3A">
                  <div class="content3A-1">
                    <article-uno class="articles"></article-uno>
+                   <article-dos class="articles"></article-dos>
+                   <article-tres class="articles"></article-tres>
+                   <article-cuatro class="articles"></article-cuatro>
               </div>
                  <div class="content3A-2">
-                    <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
-              </div>
-              <!--Imagen-->
-                 <div class="content3A-3">
-                    <article-dos class="articles"></article-dos>
-              </div>
-                 <div class="content3A-4">
-                    <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
-              </div>
-              <!--Imagen-->
-                 <div class="content3A-5">
-                    <article-tres class="articles"></article-tres>
-              </div>
-                 <div class="content3A-6">
-                     <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio! </p></a>
-                </div>
-              <!--Imagen-->
-                  <div class="content3A-7">
-                     <article-cuatro class="articles"></article-cuatro>
-               </div>
-                  <div class="content3A-8">
-                     <a href=""><p class="texts">Las Organizaciones populares estamos construyendo territorio!</p></a>
+                    <a href=""><p class="texts1">Las Organizaciones populares estamos construyendo territorio! </p></a>
+                     <a href=""><p class="texts2">Las Organizaciones populares estamos construyendo territorio! </p></a>
+                     <a href=""><p class="texts3">Las Organizaciones populares estamos construyendo territorio! </p></a>
+                     <a href=""><p class="texts4">Las Organizaciones populares estamos construyendo territorio!</p></a>
                </div>
            </div>
            </div>
@@ -67,20 +52,24 @@ export default {
 
 <style>
 
-.content3A-2 {
+.texts1 {
   border: 5px solid violet;
   border-radius: 20px;
-}.content3A-4 {
+  padding:10px;
+}.texts2 {
   border: 5px solid yellow;
   border-radius: 20px;
-}.content3A-6 {
+  padding:10px;
+}.texts3 {
   border: 5px solid green;
   border-radius: 20px;
-}
-.content3A-8 {
+  padding:10px;
+}.texts4 {
   border: 5px solid orange;
   border-radius: 20px;
+  padding:10px;
 }
+
 
 .content1  {
   border: 5px solid #5f7044;
@@ -115,18 +104,18 @@ export default {
 .articles {
   width: 150px;
   height: 100px;
-  /* padding:10px;
-  margin:10px; */
+  padding:10px;
+  /* margin:10px; */
 }
 
-.texts {
-  text-align: start;
+/* .texts {
+  text-align: start; */
   /* padding:10px;*/
-  margin:5px; 
+  /* margin:5px;  */
   /* font-size: small; */
-  color: blue;
+  /* color: blue;
   text-decoration: underline;  
-}
+} */
 /* .container > texts:hover {
   border: 2px solid black;
   text-decoration: underline; 
@@ -138,7 +127,10 @@ export default {
   top: 0;
 } */
 
-
+.content3{ 
+   width: 100%; 
+  height: 24.5%;
+}
 
 .portada {
   margin:10px;
@@ -157,7 +149,7 @@ export default {
   
   display:grid;
   grid-template-columns: 200px 800px auto;
-  grid-template-rows: 100%;
+  grid-template-rows: 24,5%;
   grid-gap: 20px;
   grid-template-areas: "content1  content2  content3"
                        
@@ -165,17 +157,22 @@ export default {
 
 .container .content1 {
   grid-area: content1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   
 }
 
 
 .container .content2 {
   grid-area: content2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .container .content3 {
   grid-area: content3;
-
 }
 
 /* .container > div:hover {
@@ -198,18 +195,21 @@ export default {
 
 /*3A*/
 .content3A {
-   margin: 5px;
-   padding:50px;
+  /* grid-template-rows: 1fr; */
+  /* margin: 5px; */
+  width: 100%; 
+  height: 24.5%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding:50px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: auto 65%;
-  /* grid-template-rows: 1fr; */
   grid-template-areas: "content3A-1   content3A-2"
-                       "content3A-3   content3A-4"
-                       "content3A-5   content3A-6"
-                       "content3A-7   content3A-8"
+                      
 }
-.content3A .content3A-1 {
+/* .content3A .content3A-1 {
   
   grid-area: content3A-1;
 }
@@ -233,7 +233,7 @@ export default {
 }
 .content3A .content3A-8 {
   grid-area: content3A-8;
-}
+} */
 /* .content3A:hover {
   border: 2px solid black; 
   } */
@@ -246,6 +246,8 @@ export default {
       background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
       background-size: 20px 20px;
       background-position: 0 0,10px 10px;
+      width: 100%; 
+      height: 24.5%;
  }
 
  @media screen and (max-width: 600px ) {
