@@ -11,11 +11,11 @@
 
                <div class="content2" style="overflow: auto; width: 100%; height: 24.5%;">
                    <p class="titulaNav">Movimiento Popular La Dignidad</p>
+                   <new-component></new-component>
                    <contenido-portada></contenido-portada>
               </div>
 
               <div class="content3">
-              <!--Imagen-->
               <div class="content3A">
                  <div class="content3A-1">
                      <article-uno class="articles"></article-uno>
@@ -38,9 +38,11 @@
 
 
 <script>
+
 export default {
   name: 'IndexPage',
 }
+ 
 </script>
 
 
