@@ -141,12 +141,13 @@ export default {
    
 /*Columnas*/
 .container {
-  
   display:grid;
-  grid-template-columns: 200px 800px auto;
+  grid-template-columns: 200px 600px auto;
   grid-template-rows: 24,5%;
   grid-gap: 20px;
   grid-template-areas: "content1  content2  content3"
+                       
+                       
                        
 }
 
