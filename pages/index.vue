@@ -11,7 +11,7 @@
 
                <div class="content2" style="overflow: auto; width: 100%; height: 24.5%;">
                    <p class="titulaNav">Movimiento Popular La Dignidad</p>
-                   <new-component></new-component>
+                   <google-ad></google-ad>
                    <contenido-portada></contenido-portada>
               </div>
 
