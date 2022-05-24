@@ -14,25 +14,20 @@
                    <contenido-portada></contenido-portada>
               </div>
 
-              <div class="=content3">
+              <div class="content3">
               <!--Imagen-->
               <div class="content3A">
                  <div class="content3A-1">
-                   <article-uno class="articles"></article-uno>
-                   <article-dos class="articles"></article-dos>
-                   <article-tres class="articles"></article-tres>
-                   <article-cuatro class="articles"></article-cuatro>
+                     <article-uno class="articles"></article-uno>
+                     <article-dos class="articles"></article-dos>
+                     <article-tres class="articles"></article-tres>
+                     <article-cuatro class="articles"></article-cuatro>
+                   </div>
               </div>
-                 <div class="content3A-2">
-                    <a href=""><p class="texts1">Las Organizaciones populares estamos construyendo territorio! </p></a>
-                     <a href=""><p class="texts2">Las Organizaciones populares estamos construyendo territorio! </p></a>
-                     <a href=""><p class="texts3">Las Organizaciones populares estamos construyendo territorio! </p></a>
-                     <a href=""><p class="texts4">Las Organizaciones populares estamos construyendo territorio!</p></a>
-               </div>
            </div>
            </div>
          </div>
-     </div>
+    
   
 
 </template>
@@ -52,7 +47,12 @@ export default {
 
 <style>
 
-.texts1 {
+.articles {
+  padding:5px;
+  position: 100%;
+}
+
+/* .texts1 {
   border: 5px solid violet;
   border-radius: 20px;
   padding:10px;
@@ -68,7 +68,7 @@ export default {
   border: 5px solid orange;
   border-radius: 20px;
   padding:10px;
-}
+} */
 
 
 .content1  {
@@ -101,13 +101,6 @@ export default {
   top: 0;
 } */
 
-.articles {
-  width: 150px;
-  height: 100px;
-  padding:10px;
-  /* margin:10px; */
-}
-
 /* .texts {
   text-align: start; */
   /* padding:10px;*/
@@ -127,10 +120,10 @@ export default {
   top: 0;
 } */
 
-.content3{ 
+/* .content3{ 
    width: 100%; 
   height: 24.5%;
-}
+} */
 
 .portada {
   margin:10px;
@@ -197,22 +190,23 @@ export default {
 .content3A {
   /* grid-template-rows: 1fr; */
   /* margin: 5px; */
-  width: 100%; 
-  height: 24.5%;
+  /* width: 100%; 
+  height: 24.5%; */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding:50px;
+  /* padding:50px; */
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: auto 65%;
-  grid-template-areas: "content3A-1   content3A-2"
+  /* grid-gap: 20px; */
+  grid-template-columns: 450px;
+  /* grid-template-rows: auto; */
+  grid-template-areas:  "content3A-1"
                       
 }
-/* .content3A .content3A-1 {
-  
+
+.content3A .content3A-1 {
   grid-area: content3A-1;
-}
+}/* 
 .content3A .content3A-2 {
   grid-area: content3A-2;
 }
