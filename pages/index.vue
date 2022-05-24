@@ -9,7 +9,7 @@
                   <text-foot></text-foot>
               </div>
 
-               <div class="content2" style="overflow: auto; width: 800px; height: 800px">
+               <div class="content2">
                    <p class="titulaNav">Movimiento Popular La Dignidad</p>
                    <contenido-portada></contenido-portada>
               </div>
