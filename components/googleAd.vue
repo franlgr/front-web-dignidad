@@ -23,9 +23,10 @@ export default {
     if (!this.isDev) {
       return {
         productionScripts: [],
-        scripts: [
-          { hid: 'adsense', src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8627466046363756" },
-        ]
+        scripts: [{ 
+            hid: 'adsense', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8627466046363756', async: true, crossorigin: 'anonymous',
+            },
+          ]
       }
     }
 
