@@ -10,8 +10,8 @@
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
                         style="color:chocolate">Dignidad Capilla Del Monte</span>
                 </a>
-              
-                <div class=" w-full md:block md:w-auto" >
+
+                <div class=" w-full md:block md:w-auto">
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                         <li>
                             <a href="#" class="flex space-x-2  font-normal text-base hover:text-gray-400">
@@ -59,31 +59,28 @@
                             <img role="img" aria-label="code editor" tabindex="0" class="focus:outline-none w-full"
                                 src="../img/portPh1.jpg" alt="code editor" style="border-radius:19px;" />
                             <div class="py-4 px-8 w-full flex justify-between bg-indigo-700"
-                                style="border-radius:19px;">
+                                style="border-radius:19px;background: chocolate;">
+                                <p tabindex=" 0"
+                                    class="focus:outline-none text-sm text-white font-semibold tracking-wide">Pié de
+                                    página</p>
                                 <p tabindex="0"
-                                    class="focus:outline-none text-sm text-white font-semibold tracking-wide">Bruce
-                                    Wayne</p>
-                                <p tabindex="0"
-                                    class="focus:outline-none text-sm text-white font-semibold tracking-wide">13TH Oct,
-                                    2020</p>
+                                    class="focus:outline-none text-sm text-white font-semibold tracking-wide">Fecha</p>
                             </div>
                             <div class=" px-10 py-6 rounded-bl-3xl rounded-br-3xl bg-yellow-50"
-                                style="border-radius:15px;">
-                                <h1 tabindex="0"
+                                style="border-radius:15px;  background: coral">
+                                <h1 tabindex=" 0"
                                     class="focus:outline-none text-4xl text-gray-900 font-semibold tracking-wider">
-                                    Transactions</h1>
+                                    Título</h1>
                                 <p tabindex="0"
                                     class="focus:outline-none text-gray-700 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 w-11/12">
-                                    Find the latest events updates or create events, concerts, conferences, workshops,
-                                    exhibitions, and cultural events in all cities of the US. The aim of Eventistan is
-                                    to promote healthy and entertaining event.Find the latest events updates or create
-                                    events, concerts, conferences, workshops, exhibitions, and cultural events in all
-                                    cities of the US. The aim of Eventistan is to promote healthy and entertaining
-                                    event.</p>
+                                    Información más relevante... Relleno con Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Illo corporis eveniet sint laborum eum itaque asperiores adipisci
+                                    cumque. Totam reprehenderit minima laudantium tempore sit, eaque voluptates odio nam
+                                    voluptatem quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus, voluptates autem aut dolorem sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus impedit molestiae asperiores aut numquam, iusto explicabo nemo ducimus modi?</p>
                                 <div class="w-full flex justify-end">
                                     <button
                                         class="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
-                                        <span class=" text-base tracking-wide text-indigo-700">Read more</span>
+                                        <span class=" text-base tracking-wide text-indigo-700">Ver más info..</span>
                                         <svg class="ml-3 lg:ml-6 text-indigo-700" xmlns="http://www.w3.org/2000/svg"
                                             width="20" height="18" viewBox="0 0 20 18" fill="none">
                                             <path d="M11.7998 1L18.9998 8.53662L11.7998 16.0732" stroke="currentColor"
@@ -102,27 +99,28 @@
                                     <img tabindex="0" role="img" aria-label="gaming" class="focus:outline-none w-full"
                                         src="../img/article4.jpg" alt="games" style="border-radius:15px;" />
                                     <div class="py-2 px-4 w-full flex justify-between bg-indigo-700"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px; background: chocolate;">
                                         <p tabindex="0"
                                             class="focus:outline-none  text-sm text-white font-semibold tracking-wide">
-                                            Bruce Wayne</p>
+                                            Pié de página</p>
                                         <p tabindex="0"
                                             class="focus:outline-none text-sm text-white font-semibold tracking-wide">
-                                            13TH Oct, 2020</p>
+                                            Fecha</p>
                                     </div>
                                     <div class="bg-yellow-50 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px; background: coral;">
                                         <h1 tabindex="0"
                                             class="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
-                                            Transactions</h1>
+                                            Título</h1>
                                         <p tabindex="0"
                                             class="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">
-                                            Find the latest events updates or create events, concerts, conferences,
-                                            workshops...</p>
+                                            Informacón-... relleno con Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Corporis, nesciunt.</p>
                                         <div class="w-full flex justify-end">
                                             <button
                                                 class="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
-                                                <span class=" text-base tracking-wide text-indigo-700">Read more</span>
+                                                <span class=" text-base tracking-wide text-indigo-700">Ver más
+                                                    info..</span>
                                                 <svg class="ml-3 lg:ml-6 text-indigo-700"
                                                     xmlns="http://www.w3.org/2000/svg" width="20" height="18"
                                                     viewBox="0 0 20 18" fill="none">
@@ -142,27 +140,27 @@
                                         src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(3).png" alt="notes"
                                         style="border-radius:15px;" />
                                     <div class="py-2 px-4 w-full flex justify-between bg-indigo-700"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px; background: chocolate; ">
                                         <p tabindex="0"
                                             class="focus:outline-none text-sm text-white font-semibold tracking-wide">
-                                            Bruce Wayne</p>
+                                            Pié de página</p>
                                         <p tabindex="0"
                                             class="focus:outline-none text-sm text-white font-semibold tracking-wide">
-                                            13TH Oct, 2020</p>
+                                            Fecha</p>
                                     </div>
                                     <div class="bg-yellow-50 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px; background: coral;">
                                         <h1 tabindex="0"
                                             class="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
-                                            Transactions</h1>
+                                            Título</h1>
                                         <p tabindex="0"
                                             class="focus:outline-none text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">
-                                            Find the latest events updates or create events, concerts, conferences,
-                                            workshops...</p>
+                                            Información relevante... relleno con Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Nemo, reiciendis?</p>
                                         <div class="w-full flex justify-end">
                                             <button
                                                 class="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
-                                                <span class=" text-base tracking-wide text-indigo-700">Read more</span>
+                                                <span class=" text-base tracking-wide text-indigo-700">Ver más info..</span>
                                                 <svg class="ml-3 lg:ml-6 text-indigo-700"
                                                     xmlns="http://www.w3.org/2000/svg" width="20" height="18"
                                                     viewBox="0 0 20 18" fill="none">
@@ -184,7 +182,7 @@
                                         src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(4).png"
                                         alt="laptop" style="border-radius:15px;" />
                                     <div class="py-2 px-4 w-full flex justify-between bg-indigo-700"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px; background: chocolate;">
                                         <p tabindex="0"
                                             class="focus:outline-none text-sm text-white font-semibold tracking-wide">
                                             Bruce Wayne</p>
@@ -193,7 +191,7 @@
                                             13TH Oct, 2020</p>
                                     </div>
                                     <div class="bg-yellow-50 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px;background: coral;">
                                         <h1 tabindex="0"
                                             class="focus:outline-none text-lg text-gray-900 font-semibold tracking-wider">
                                             Transactions</h1>
@@ -204,7 +202,7 @@
                                         <div class="w-full flex justify-end">
                                             <button
                                                 class="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
-                                                <span class=" text-base tracking-wide text-indigo-700">Read more</span>
+                                                <span class=" text-base tracking-wide text-indigo-700">Ver más info..</span>
                                                 <svg class="ml-3 lg:ml-6 text-indigo-700"
                                                     xmlns="http://www.w3.org/2000/svg" width="20" height="18"
                                                     viewBox="0 0 20 18" fill="none">
@@ -221,9 +219,9 @@
                                 <div tabindex="0" class="focus:outline-none" aria-label="card 5">
                                     <img tabindex="0" role="img" aria-label="worker" class="focus:outline-none w-full"
                                         src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(5).png"
-                                        alt="worker" style="border-radius:15px;" />
+                                        alt="worker" style="border-radius:15px;background: chocolate" />
                                     <div class="py-2 px-4 w-full flex justify-between bg-indigo-700"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px;background: chocolate;">
                                         <p tabindex="0"
                                             class="focus:outline-none text-sm text-white font-semibold tracking-wide">
                                             Bruce Wayne</p>
@@ -232,7 +230,7 @@
                                             13TH Oct, 2020</p>
                                     </div>
                                     <div class="bg-yellow-50 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
-                                        style="border-radius:15px;">
+                                        style="border-radius:15px;background: coral;">
                                         <h1 tabindex="0"
                                             class="focus:outline-none  text-lg text-gray-900 font-semibold tracking-wider">
                                             Transactions</h1>
@@ -243,7 +241,7 @@
                                         <div class="w-full flex justify-end">
                                             <button
                                                 class="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer">
-                                                <span class=" text-base tracking-wide text-indigo-700">Read more</span>
+                                                <span class=" text-base tracking-wide text-indigo-700">Ver más info</span>
                                                 <svg class="ml-3 lg:ml-6 text-indigo-700"
                                                     xmlns="http://www.w3.org/2000/svg" width="20" height="18"
                                                     viewBox="0 0 20 18" fill="none">
@@ -374,7 +372,7 @@
       active:bg-blue-800 active:shadow-lg
       transition
       duration-150
-      ease-in-out">Send</button>
+      ease-in-out">Enviar</button>
                             </form>
                         </div>
 
