@@ -18,9 +18,7 @@
      export default {
         data(){
            return{
-            chat_id: "2047819373",
-            file_id: 'AgACAgEAAxkBAAPAYndohEskxAEqz4lZJG5pczAOnuAAApipMRuXncBHyQ0G7oTOdhkBAAMCAANzAAMkBA',
-            file:[],
+            chat_id: "2047819373", 
             contenido: {
                 text:"",
                 names:"",
@@ -41,7 +39,7 @@
                         text: this.contenido.text,
                           }).then((response) =>{
                               console.log("nuevo: ", response);
-                          }).catch(function (error) {
+                          }).catch((error) => {
                               console.log(error);
                        });
                      }

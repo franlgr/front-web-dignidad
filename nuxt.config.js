@@ -64,13 +64,14 @@ export default {
         // '@nuxtjs/eslint-module',
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/google-adsense'
+        // '@nuxtjs/google-adsense'
 
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
-        // '@nuxtjs/google-adsense'
+        // '@nuxtjs/axios',
+        '@nuxtjs/google-adsense'
         // Simple usage
         // ['@nuxtjs/google-adsense', {
         //     id: 'ca-pub-8627466046363756'
@@ -85,6 +86,7 @@ export default {
     axios: {
         // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
         baseURL: '/',
+
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
