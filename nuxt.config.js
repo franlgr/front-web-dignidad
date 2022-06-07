@@ -11,12 +11,14 @@ export default {
     head: {
         function() {
             return {
-                script: [{
+                script: [
+                    // {
 
-                        async: true,
-                        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8627466046363756",
-                        crossorigin: "anonymous"
-                    },
+                    //     async: true,
+                    //     src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8627466046363756",
+                    //     crossorigin: "anonymous"
+                    // },
+                    // 
                     {
                         defer: true,
                         src: 'https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js'
@@ -44,27 +46,6 @@ export default {
                 rel: 'stylesheet',
                 href: 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css',
 
-            },
-            {
-                rel: "apple-touch-icon",
-                sizes: "180x180",
-                href: "/apple-touch-icon.png"
-            },
-            {
-                rel: "icon",
-                type: "image/png",
-                sizes: "32x32",
-                href: "/favicon-32x32.png"
-            },
-            {
-                rel: "icon",
-                type: "image/png",
-                sizes: "16x16",
-                href: "/favicon-16x16.png"
-            },
-            {
-                rel: "manifest",
-                href: "/site.webmanifest"
             }
         ],
 

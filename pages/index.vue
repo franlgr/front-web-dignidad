@@ -11,17 +11,8 @@
                         style="color:chocolate">Dignidad Capilla Del Monte</span>
                 </a>
 
-                <!--Dropdown-->
-                <div class="w-1/6">
-                    <select class="form-control" name="choice-search" id="choice-search"
-                        @change="changeJobTitle($event)">
-                        <option value="" selected disabled>Más sectores</option>
-                        <option v-for="jobTitle in jobTitles" :value="jobTitle.id" :key="jobTitle.id">{{ jobTitle.name
-                            }}
-                        </option>
-                    </select>
-                </div>
-            <!-- <br> -->
+
+                <!-- <br> -->
                 <!-- <p><span>Selected job title: {{ selectedJobTitle }}</span></p> -->
 
                 <div class=" w-full md:block md:w-auto">
@@ -51,6 +42,20 @@
                                     Facebook
                                 </span>
                             </a>
+                        </li>
+                        <li>
+                            <!--Dropdown-->
+                            <div class="w-1/6 bg-yellow-50">
+                                <select class="form-control" name="choice-search" id="choice-search"
+                                    @change="changeJobTitle($event)">
+                                    <option value="" selected disabled>°°°</option>
+                                    <option v-for="jobTitle in jobTitles" :value="jobTitle.id" :key="jobTitle.id"><a
+                                            href="facebook.com">
+                                            {{ jobTitle.name }}
+                                        </a>
+                                    </option>
+                                </select>
+                            </div>
                         </li>
 
                     </ul>
@@ -316,7 +321,7 @@
 
                             <form>
                                 <div class="form-group mb-6">
-                                    <input type="text" class="form-control block
+                                    <input v-model="Nombre" type="text" class="form-control block
         w-full
         px-3
         py-1.5
@@ -330,10 +335,10 @@
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-                                        placeholder="Nombre" v-model="Nombre">
+                                        placeholder="Nombre">
                                 </div>
                                 <div class="form-group mb-6">
-                                    <input type="contact" class="form-control block
+                                    <input v-model="Contacto" type="contact" class="form-control block
         w-full
         px-3
         py-1.5
@@ -347,10 +352,10 @@
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
-                                        placeholder="Contacto" v-model="Contacto">
+                                        placeholder="Contacto">
                                 </div>
                                 <div class="form-group mb-6">
-                                    <textarea class="
+                                    <textarea v-model="Mensaje" class="
         form-control
         block
         w-full
@@ -366,7 +371,7 @@
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      " id="exampleFormControlTextarea13" rows="3" placeholder="Mensaje" v-model="Mensaje"></textarea>
+      " id="exampleFormControlTextarea13" rows="3" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="form-group form-check text-center mb-6">
                                     <!-- <input type="checkbox"
@@ -464,9 +469,9 @@ export default {
                 { name: "Merendarte", id: 2 },
                 { name: "Cultivarte", id: 3 },
                 { name: "Taku", id: 4 },
-                 { name: "Almacén", id: 5 },
+                { name: "Almacén", id: 5 },
                 { name: "Cultivarte", id: 6 },
-                 { name: "ECOS", id: 7 }
+                { name: "ECOS", id: 7 }
             ],
             selectedJobTitle: null,
             chat_id: "2047819373",
@@ -480,19 +485,19 @@ export default {
         changeJobTitle(event) {
             this.selectedJobTitle = event.target.options[event.target.options.selectedIndex].text
         },
-
         sendMsg() {
-            this.$axios.post('https://api.telegram.org/bot5345020457:AAF5K4979ne8sKV3B4SWuUf-0HM4SrwBm_Y/sendMessage', {
+            this.$axios.post('https://api.telegram.org/bot5171770731:AAE37wm0BsTmWUXRcK35ShAi266CVJI3k34/sendMessage?chat_id=2047819373', {
                 chat_id: this.chat_id,
-                text:"Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje " + this.Mensaje
+                text: "Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje " + this.Mensaje
             }).then((response) => {
                 console.log("response: " + response);
             }).catch(function (error) {
                 console.log("error:" + error);
             });
         }
-    }
 
+        
+    }
   }
 
     
