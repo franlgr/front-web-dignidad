@@ -330,7 +330,7 @@
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-                                        placeholder="Nombre">
+                                        placeholder="Nombre" v-model="Nombre">
                                 </div>
                                 <div class="form-group mb-6">
                                     <input type="contact" class="form-control block
@@ -366,7 +366,7 @@
         ease-in-out
         m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      " id="exampleFormControlTextarea13" rows="3" placeholder="Mensaje"></textarea>
+      " id="exampleFormControlTextarea13" rows="3" placeholder="Mensaje" v-model="Mensaje"></textarea>
                                 </div>
                                 <div class="form-group form-check text-center mb-6">
                                     <!-- <input type="checkbox"
@@ -376,7 +376,7 @@
                                         me
                                         a copy of this message</label> -->
                                 </div>
-                                <button type="submit" class="
+                                <button class="
       w-full
       px-6
       py-2.5
@@ -482,7 +482,7 @@ export default {
         },
 
         sendMsg() {
-            this.$axios.post('https://api.telegram.org/bot5345020457:AAF5K4979ne8sKV3B4SWuUf-0HM4SrwBm_Y/getUpdates', {
+            this.$axios.post('https://api.telegram.org/bot5345020457:AAF5K4979ne8sKV3B4SWuUf-0HM4SrwBm_Y/sendMessage', {
                 chat_id: this.chat_id,
                 text:"Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje " + this.Mensaje
             }).then((response) => {
