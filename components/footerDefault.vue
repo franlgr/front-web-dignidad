@@ -189,9 +189,10 @@ export default {
                 chat_id: this.chat_id,
                 text: "Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje: " + this.Mensaje
             }).then((response) => {
-              
+              alert("Mensaje enviado!")
                 console.log("response: " + response);
             }).catch(function (error) {
+                alert("Error al enviar!")
                 console.log("error:" + error);
             });
         }
