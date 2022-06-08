@@ -161,8 +161,7 @@
                     reserved</p>
             </div>
         </footer>
-        <notifications></notifications>
-        <vuejs-noty></vuejs-noty>
+     
 
 
     </div>
@@ -174,7 +173,7 @@ export default {
     data() {
         return {
 
-            chat_id: "2047819373",
+            chat_id: " -1001636568775",
             Nombre: "",
             Contacto: "",
             Mensaje: "",
@@ -186,11 +185,11 @@ export default {
         //     this.selectedJobTitle = event.target.options[event.target.options.selectedIndex].text
         // },
         sendMsg() {
-            this.$axios.post('https://api.telegram.org/bot5171770731:AAE37wm0BsTmWUXRcK35ShAi266CVJI3k34/sendMessage?chat_id=2047819373', {
+            this.$axios.post('https://api.telegram.org/bot5171770731:AAE37wm0BsTmWUXRcK35ShAi266CVJI3k34/sendMessage?chat_id=-1001636568775', {
                 chat_id: this.chat_id,
                 text: "Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje: " + this.Mensaje
             }).then((response) => {
-               this.$noty.success("hola")
+              
                 console.log("response: " + response);
             }).catch(function (error) {
                 console.log("error:" + error);
