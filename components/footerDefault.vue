@@ -92,6 +92,8 @@
                                         me
                                         a copy of this message</label> -->
                                 </div>
+
+
                                 <button class="
       w-full
       px-6
@@ -104,12 +106,12 @@
       uppercase
       rounded
       shadow-md
-      hover:bg-yellow-700 hover:shadow-lg
-      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-800 active:shadow-lg
+      hover:bg-yellow-100 hover:shadow-lg
+      focus:bg-yellow-50 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-yellow-50 active:shadow-lg
       transition
       duration-150
-      ease-in-out" @click="sendMsg()">Enviar</button>
+      ease-in-out" @click="sendMsg()" >Enviar</button>
                             </form>
                         </div>
 
@@ -159,6 +161,10 @@
                     reserved</p>
             </div>
         </footer>
+        <notifications></notifications>
+        <vuejs-noty></vuejs-noty>
+
+
     </div>
 </template>
 
@@ -184,6 +190,7 @@ export default {
                 chat_id: this.chat_id,
                 text: "Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje: " + this.Mensaje
             }).then((response) => {
+               this.$noty.success("hola")
                 console.log("response: " + response);
             }).catch(function (error) {
                 console.log("error:" + error);
@@ -193,3 +200,8 @@ export default {
 }
 
 </script>
+
+<style>
+
+.notifyjs-addClassName-base {}
+</style>

@@ -10,42 +10,42 @@
                         <div class="relative">
                             <!-- Dropdown toggle button -->
                             <button @click="mostrarDrop()"
-                                class="flex items-center p-2 bg-yellow-500 bg-gray-100 rounded-md">
+                                class="flex items-center p-2 bg-yellow-500 bg-gray-100 rounded-md hover:bg-yellow-100 hover:text-yellow-500">
                                 <span class="mr-4">Otros sectores de La Dignidad </span>
                             </button>
                             <!-- Dropdown list -->
                             <div id="dropdownList"
                                 class="hidden right-0 py-2 mt-2 bg-yellow-200 bg-gray-100 rounded-md shadow-xl w-44">
                                 <button
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:text-yellow-500"
                                     @click="ocultarX()" style="float:right;">X</button>
                                 <NuxtLink
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="/">
                                     Página principal
                                 </NuxtLink>
                                 <NuxtLink
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../merendarte/">
                                     Merendarte
                                 </NuxtLink>
                                 <NuxtLink
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../dignidadrural/">
                                     Dignidad Rural
                                 </NuxtLink>
                                 <NuxtLink
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../ecos/">
                                     ECOS
                                 </NuxtLink>
                                 <NuxtLink
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../taku/">
                                     Taku
                                 </NuxtLink>
                                 <NuxtLink
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../almacen/">
                                     Almacén buen vivir
                                 </NuxtLink>
@@ -98,7 +98,7 @@
 
         <!--Footer-->
         <footer-default></footer-default>
-        
+
     </div>
 </template>
 
