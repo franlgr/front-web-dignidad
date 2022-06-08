@@ -3,11 +3,7 @@
         <!--Nav-->
         <nav class="naveBar bg-yellow-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="../img/logo.jpg" class="mr-3 h-10 sm:h-20 rounded" alt="Flowbite Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-                        style="color:chocolate">Dignidad Capilla Del Monte</span>
-                </a>
+                <logo-default></logo-default>
                 <ul>
                     <li>
                         <!--Dropdown-->
@@ -25,32 +21,32 @@
                                     @click="ocultarX()" style="float:right;">X</button>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./Merendarte/">
-                                    Merendarte
+                                    to="/">
+                                    Página principal
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./dignidadrural/">
+                                    to="../dignidadrural/">
                                     Dignidad Rural
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./ecos/">
+                                    to="../ecos/">
                                     ECOS
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./cultivarte/">
+                                    to="../cultivarte/">
                                     Cultivarte
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./taku/">
+                                    to="../taku/">
                                     Taku
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./almacen/">
+                                    to="../almacen/">
                                     Almacén buen vivir
                                 </NuxtLink>
                             </div>
@@ -99,34 +95,66 @@
                 </div>
             </div>
         </nav>
+
+        <!--Merendarte component-->
+        <div>
+            <input type="file" v-on="file">
+            <input type="text" v-model="contenido.names" placeholder="Nombres">
+            <input type="text" v-model="contenido.email" placeholder="Mail">
+            <input type="text" v-model="contenido.text" placeholder="Mensaje">
+            <button id="botonE" @click="sendMsg()">Enviar</button>
+        </div>
+        <footer-default></footer-default>
+
     </div>
+
+
 </template>
 
-
 <script>
-
+// import axios from 'axios'
 export default {
     data() {
         return {
+            chat_id: "2047819373",
+            contenido: {
+                text: "",
+                names: "",
+                email: "",
+
+            }
 
         }
-
     },
     methods: {
-
-
+        sendMsg() {
+            this.$axios.post('https://api.telegram.org/bot5345020457:AAF5K4979ne8sKV3B4SWuUf-0HM4SrwBm_Y/getUpdates', {
+                chat_id: this.chat_id,
+                // file_id: this.file_id,
+                //   ctx: this.contenido.text,
+                files: `Imagen: ${this.file}`,
+                //   text: `Nombres: ${this.contenido.names} Mail: ${this.contenido.email} Mensaje: ${this.contenido.text}`,
+                text: this.contenido.text,
+            }).then((response) => {
+                console.log("nuevo: ", response);
+            }).catch((error) => {
+                console.log(error);
+            });
+        },
         mostrarDrop() {
             document.getElementById("dropdownList").style.display = "block"
         },
         ocultarX() {
             document.getElementById("dropdownList").style.display = "none"
         }
-
-
-
     }
 }
-
 </script>
 
 
+<style>
+#botonE {
+    background: black;
+    color: yellow;
+}
+</style>

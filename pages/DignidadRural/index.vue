@@ -3,11 +3,7 @@
         <!--Nav-->
         <nav class="naveBar bg-yellow-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="../img/logo.jpg" class="mr-3 h-10 sm:h-20 rounded" alt="Flowbite Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-                        style="color:chocolate">Dignidad Capilla Del Monte</span>
-                </a>
+                <logo-default></logo-default>
                 <ul>
                     <li>
                         <!--Dropdown-->
@@ -26,36 +22,31 @@
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
                                     to="/">
-                                        Página principal
+                                    Página principal
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./dogComponent/">
+                                    to="../merendarte/">
                                     Merendarte
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./dogComponent/">
-                                    Dignidad Rural
-                                </NuxtLink>
-                                <NuxtLink
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./dogComponent/">
+                                    to="../ecos/">
                                     ECOS
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./dogComponent/">
+                                    to="../cultivarte/">
                                     Cultivarte
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./dogComponent/">
+                                    to="../taku/">
                                     Taku
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                                    to="./dogComponent/">
+                                    to="../almacen/">
                                     Almacén buen vivir
                                 </NuxtLink>
                             </div>
@@ -104,6 +95,11 @@
                 </div>
             </div>
         </nav>
+
+        <!--Footer-->
+        <footer-default></footer-default>
+
+        
     </div>
 </template>
 
@@ -133,5 +129,3 @@ export default {
 }
 
 </script>
-
-
