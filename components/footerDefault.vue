@@ -30,7 +30,7 @@
                         <p>Consultas</p>
                         <div class="block p-6 rounded-lg shadow-lg bg-green-200 max-w-md">
 
-                            <form>
+                            <div>
                                 <div class="form-group mb-6">
                                     <input v-model="Nombre" type="text" class="form-control block
         w-full
@@ -112,7 +112,7 @@
       transition
       duration-150
       ease-in-out" @click="sendMsg()" >Enviar</button>
-                            </form>
+                            </div>
                         </div>
 
                     </div>
@@ -173,7 +173,7 @@ export default {
     data() {
         return {
 
-            chat_id: " -1001636568775",
+            chat_id: '-1001636568775', 
             Nombre: "",
             Contacto: "",
             Mensaje: "",
@@ -189,10 +189,10 @@ export default {
                 chat_id: this.chat_id,
                 text: "Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje: " + this.Mensaje
             }).then((response) => {
-              alert("Mensaje enviado!")
+                alert("Mensaje enviado!");
                 console.log("response: " + response);
             }).catch(function (error) {
-                alert("Error al enviar!")
+                alert("Error al enviar!");
                 console.log("error:" + error);
             });
         }
@@ -203,5 +203,5 @@ export default {
 
 <style>
 
-.notifyjs-addClassName-base {}
+
 </style>
