@@ -30,9 +30,9 @@
                         <p>Consultas</p>
                         <div class="block p-6 rounded-lg shadow-lg bg-green-200 max-w-md">
 
-                            <div>
-                                <div class="form-group mb-6">
-                                    <input v-model="Nombre" type="text" class="form-control block
+                            <div action="#">
+                                <div action="#" class="form-group mb-6">
+                                    <input v-validate='required' v-model="Nombre" type="text" class="form-control block
         w-full
         px-3
         py-1.5
@@ -49,7 +49,8 @@
                                         placeholder="Nombre">
                                 </div>
                                 <div class="form-group mb-6">
-                                    <input v-model="Contacto" type="contact" class="form-control block
+                                    <input v-model="Contacto" type="email" class="form-control block 
+                                    
         w-full
         px-3
         py-1.5
@@ -111,7 +112,7 @@
       active:bg-yellow-50 active:shadow-lg
       transition
       duration-150
-      ease-in-out" @click="sendMsg()" >Enviar</button>
+      ease-in-out bg-gradient-to-t" @click="sendMsg()">Enviar</button>
                             </div>
                         </div>
 
@@ -161,15 +162,21 @@
                     reserved</p>
             </div>
         </footer>
-     
+        <base-alert type="success">
+            <strong>Success!</strong> This is a success alert—check it out!
+        </base-alert>
+        <notifications></notifications>
 
+        <notifications group="foo" />
 
     </div>
 </template>
 
 <script>
 
+// import { ValidationObserver, ValidationProvider } from "vee-validate";
 export default {
+    
     data() {
         return {
 
@@ -189,10 +196,18 @@ export default {
                 chat_id: this.chat_id,
                 text: "Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje: " + this.Mensaje
             }).then((response) => {
-                alert("Mensaje enviado!");
+                    this.$notify({
+                        type:'success',
+                        title: 'Atención!',
+                        text: 'Mensaje Enviado!',
+                        });
                 console.log("response: " + response);
             }).catch(function (error) {
-                alert("Error al enviar!");
+                 this.$notify({
+                        type:'danger',
+                        title: 'Atención!',
+                        text: 'Error al enviar!',
+                        });
                 console.log("error:" + error);
             });
         }

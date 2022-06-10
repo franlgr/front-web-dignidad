@@ -2,22 +2,14 @@
 <template>
     <div>
 
-      
        <nav-barprincipal class="naveBar"></nav-barprincipal>
 
         <contenido-principal></contenido-principal>
 
         <footer-default></footer-default>
 
-
-
-
-
-
-
     </div>
 </template>
-
 
 <script>
 
@@ -33,9 +25,8 @@ export default {
         
     }
 }
-
-    
 </script>
+
 <style>
 
 .naveBar {

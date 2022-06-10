@@ -17,7 +17,7 @@
                             <div id="dropdownList"
                                 class="hidden right-0 py-2 mt-2 bg-yellow-200 bg-gray-100 rounded-md shadow-xl w-44">
                                 <button
-                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:text-yellow-500"
                                     @click="ocultarX()" style="float:right;">X</button>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
@@ -97,13 +97,13 @@
         </nav>
 
         <!--Merendarte component-->
-        <div>
+        <!-- <div>
             <input type="file" v-on="file">
             <input type="text" v-model="contenido.names" placeholder="Nombres">
             <input type="text" v-model="contenido.email" placeholder="Mail">
             <input type="text" v-model="contenido.text" placeholder="Mensaje">
             <button id="botonE" @click="sendMsg()">Enviar</button>
-        </div>
+        </div> -->
         <footer-default></footer-default>
 
     </div>
@@ -127,20 +127,20 @@ export default {
         }
     },
     methods: {
-        sendMsg() {
-            this.$axios.post('https://api.telegram.org/bot5345020457:AAF5K4979ne8sKV3B4SWuUf-0HM4SrwBm_Y/getUpdates', {
-                chat_id: this.chat_id,
-                // file_id: this.file_id,
-                //   ctx: this.contenido.text,
-                files: `Imagen: ${this.file}`,
-                //   text: `Nombres: ${this.contenido.names} Mail: ${this.contenido.email} Mensaje: ${this.contenido.text}`,
-                text: this.contenido.text,
-            }).then((response) => {
-                console.log("nuevo: ", response);
-            }).catch((error) => {
-                console.log(error);
-            });
-        },
+        // sendMsg() {
+        //     this.$axios.post('https://api.telegram.org/bot5345020457:AAF5K4979ne8sKV3B4SWuUf-0HM4SrwBm_Y/getUpdates', {
+        //         chat_id: this.chat_id,
+        //         // file_id: this.file_id,
+        //         //   ctx: this.contenido.text,
+        //         files: `Imagen: ${this.file}`,
+        //         //   text: `Nombres: ${this.contenido.names} Mail: ${this.contenido.email} Mensaje: ${this.contenido.text}`,
+        //         text: this.contenido.text,
+        //     }).then((response) => {
+        //         console.log("nuevo: ", response);
+        //     }).catch((error) => {
+        //         console.log(error);
+        //     });
+        // },
         mostrarDrop() {
             document.getElementById("dropdownList").style.display = "block"
         },
@@ -153,8 +153,8 @@ export default {
 
 
 <style>
-#botonE {
+/* #botonE {
     background: black;
     color: yellow;
-}
+} */
 </style>

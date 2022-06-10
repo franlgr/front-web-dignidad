@@ -56,7 +56,9 @@ export default {
 
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: [
+        "~/plugins/notifycations.js"
+    ],
 
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
@@ -93,5 +95,8 @@ export default {
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {
+
+
+    },
 }
