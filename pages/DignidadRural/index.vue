@@ -11,7 +11,7 @@
                             <!-- Dropdown toggle button -->
                             <button @click="mostrarDrop()"
                                 class="flex items-center p-2 bg-yellow-500 bg-gray-100 rounded-md hover:bg-yellow-100 hover:text-yellow-500">
-                                <span class="mr-4">Otros sectores de La Dignidad </span>
+                                <span class="mr-4">{{ dropdown.id2 }}</span>
                             </button>
                             <!-- Dropdown list -->
                             <div id="dropdownList"
@@ -22,32 +22,37 @@
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="/">
-                                    Página principal
+                                    {{ dropdown.id0 }}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../merendarte/">
-                                    Merendarte
+                                    {{ dropdown.id1 }}
+                                </NuxtLink>
+                                <NuxtLink
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
+                                    to="../dignidadrural/">
+                                    {{ dropdown.id2 }}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../ecos/">
-                                    ECOS
+                                    {{ dropdown.id3 }}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../cultivarte/">
-                                    Cultivarte
+                                    {{ dropdown.id4 }}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../taku/">
-                                    Taku
+                                    {{ dropdown.id5 }}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="../almacen/">
-                                    Almacén buen vivir
+                                    {{ dropdown.id6 }}
                                 </NuxtLink>
                             </div>
                         </div>
@@ -95,11 +100,10 @@
                 </div>
             </div>
         </nav>
-
         <!--Footer-->
         <footer-default></footer-default>
 
-        
+
     </div>
 </template>
 
@@ -109,6 +113,15 @@
 export default {
     data() {
         return {
+            dropdown: {
+                id0: "Página principal",
+                id1: "Merendarte",
+                id2: "Dignidad Rural",
+                id3: "ECOS",
+                id4: "Cultivarte",
+                id5: "Taku",
+                id6: "Almacén buén vivir"
+            }
 
         }
 

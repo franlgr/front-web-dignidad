@@ -15,7 +15,7 @@
                             <!-- Dropdown toggle button -->
                             <button @click="mostrarDrop()"
                                 class="flex items-center p-2 bg-yellow-500 bg-gray-100 rounded-md hover:bg-yellow-100 hover:text-yellow-500">
-                                <span class="mr-4">Otros sectores de La Dignidad </span>
+                                <span class="mr-4">{{dropdown.id0}}</span>
                             </button>
                             <!-- Dropdown list -->
                             <div id="dropdownList"
@@ -25,33 +25,38 @@
                                     @click="ocultarX()" style="float:right;">X</button>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
-                                    to="./Merendarte/">
-                                    Merendarte
+                                    to="/">
+                                    {{ dropdown.id0}}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
-                                    to="./dignidadrural/">
-                                    Dignidad Rural
+                                    to="../merendarte/">
+                                    {{ dropdown.id1}}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
-                                    to="./ecos/">
-                                    ECOS
+                                    to="../dignidadrural/">
+                                    {{dropdown.id2}}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
-                                    to="./cultivarte/">
-                                    Cultivarte
+                                    to="../ecos/">
+                                    {{dropdown.id3}}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
-                                    to="./taku/">
-                                    Taku
+                                    to="../cultivarte/">
+                                    {{dropdown.id4}}
                                 </NuxtLink>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
-                                    to="./almacen/">
-                                    Almacén buen vivir
+                                    to="../taku/">
+                                    {{dropdown.id5}}
+                                </NuxtLink>
+                                <NuxtLink
+                                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
+                                    to="../almacen/">
+                                    {{dropdown.id6}}
                                 </NuxtLink>
                             </div>
                         </div>
@@ -108,6 +113,15 @@
 export default {
     data() {
         return {
+            dropdown: {
+                id0: "Página principal",
+                id1: "Merendarte",
+                id2: "Dignidad Rural",
+                id3: "ECOS",
+                id4: "Cultivarte",
+                id5: "Taku",
+                id6: "Almacén buén vivir"
+            }
 
         }
 
