@@ -3,11 +3,7 @@
         <!--Nav-->
         <nav class="naveBar bg-yellow-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="../img/logo.jpg" class="mr-3 h-10 sm:h-20 rounded" alt="Flowbite Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-                        style="color:chocolate">Dignidad Capilla Del Monte</span>
-                </a>
+                <logo-default></logo-default>
                 <ul>
                     <li>
                         <!--Dropdown-->
@@ -16,6 +12,12 @@
                             <button @click="mostrarDrop()"
                                 class="flex items-center p-2 bg-yellow-500 bg-gray-100 rounded-md hover:bg-yellow-100 hover:text-yellow-500">
                                 <span class="mr-4">{{dropdown.id0}}</span>
+                                <svg class="w-5 h-5 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
                             </button>
                             <!-- Dropdown list -->
                             <div id="dropdownList"
