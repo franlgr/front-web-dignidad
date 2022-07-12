@@ -8,23 +8,26 @@
                     <li>
                         <!--Dropdown-->
                         <div class="relative">
+                            <div >
+                                <button @click="mostrarDrop()"
+                                    class="flex items-center p-2 bg-yellow-500 bg-gray-100 rounded-md hover:bg-yellow-100 hover:text-yellow-500">
+                                    <span class="mr-4">{{dropdown.id0}}</span>
+                                    <svg class="w-5 h-5 text-gray-800 dark:text-white"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
                             <!-- Dropdown toggle button -->
-                            <button @click="mostrarDrop()"
-                                class="flex items-center p-2 bg-yellow-500 bg-gray-100 rounded-md hover:bg-yellow-100 hover:text-yellow-500">
-                                <span class="mr-4">{{dropdown.id0}}</span>
-                                <svg class="w-5 h-5 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
+
                             <!-- Dropdown list -->
-                            <div id="dropdownList"
+                            <div id="dropdownList"  @click="ocultarX()" 
                                 class="hidden right-0 py-2 mt-2 bg-yellow-200 bg-gray-100 rounded-md shadow-xl w-44">
-                                <button
+                                <button 
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:text-yellow-500"
-                                    @click="ocultarX()" style="float:right;">X</button>
+                                    style="float:right;">X</button>
                                 <NuxtLink
                                     class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-500"
                                     to="/">
@@ -112,9 +115,12 @@
 
 <script>
 
+
+
 export default {
     data() {
         return {
+         
             dropdown: {
                 id0: "Página principal",
                 id1: "Merendarte",
@@ -124,12 +130,12 @@ export default {
                 id5: "Taku",
                 id6: "Almacén buén vivir"
             }
+            
 
         }
 
     },
-    methods: {
-
+    methods:{
 
         mostrarDrop() {
             document.getElementById("dropdownList").style.display = "block"
@@ -137,9 +143,6 @@ export default {
         ocultarX() {
             document.getElementById("dropdownList").style.display = "none"
         }
-
-
-
     }
 }
 

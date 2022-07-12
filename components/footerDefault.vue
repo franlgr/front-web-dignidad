@@ -162,9 +162,7 @@
                     reserved</p>
             </div>
         </footer>
-        <base-alert type="success">
-            <strong>Success!</strong> This is a success alert—check it out!
-        </base-alert>
+        
         <notifications></notifications>
 
         <notifications group="foo" />
@@ -194,21 +192,21 @@ export default {
         sendMsg() {
             this.$axios.post('https://api.telegram.org/bot5171770731:AAE37wm0BsTmWUXRcK35ShAi266CVJI3k34/sendMessage?chat_id=-1001636568775', {
                 chat_id: this.chat_id,
-                text: "Nombre: " + this.Nombre + " Contacto: " + this.Contacto + " Mensaje: " + this.Mensaje
+                text: "Nombre: " + this.Nombre + " || Contacto: " + this.Contacto + " || Mensaje: " + this.Mensaje
             }).then((response) => {
                     this.$notify({
                         type:'success',
-                        title: 'Atención!',
+                        title: 'Gracias ' + this.Nombre + '!',
                         text: 'Mensaje Enviado!',
                         });
-                console.log("response: " + response);
+                console.log("Success!");
             }).catch(function (error) {
                  this.$notify({
                         type:'danger',
-                        title: 'Atención!',
+                        title: 'Lo sentimos ' + this.Nombre + ' :(',
                         text: 'Error al enviar!',
                         });
-                console.log("error:" + error);
+                console.log("Error:");
             });
         }
     }
