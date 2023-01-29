@@ -32,58 +32,19 @@
 
                             <div action="#">
                                 <div action="#" class="form-group mb-6">
-                                    <input v-validate='required' v-model="Nombre" type="text" class="form-control block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-                                        placeholder="Nombre">
+                                    <input v-validate='required' v-model="Nombre" type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder="Nombre">
                                 </div>
                                 <div class="form-group mb-6">
-                                    <input v-model="Contacto" type="email" class="form-control block 
-                                    
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
-                                        placeholder="Contacto">
+                                    <!-- <ValidationProvider name="email" rules="required|email" v-slot="{ errors }"> -->
+                                    <input v-model="Contacto" type="email" class="form-control block  w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+                                        placeholder="Mail">
+                                        <!-- <span>{{ errors[0] }}</span>
+                                    </ValidationProvider> -->
                                 </div>
                                 <div class="form-group mb-6">
-                                    <textarea v-model="Mensaje" class="
-        form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      " id="exampleFormControlTextarea13" rows="3" placeholder="Mensaje"></textarea>
+                                    <textarea v-model="Mensaje" class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                                          " id="exampleFormControlTextarea13" rows="3" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="form-group form-check text-center mb-6">
                                     <!-- <input type="checkbox"
@@ -94,25 +55,8 @@
                                         a copy of this message</label> -->
                                 </div>
 
-
-                                <button class="
-      w-full
-      px-6
-      py-2.5
-      bg-yellow-500
-      text-white
-      font-medium
-      text-xs
-      leading-tight
-      uppercase
-      rounded
-      shadow-md
-      hover:bg-yellow-100 hover:shadow-lg
-      focus:bg-yellow-50 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-yellow-50 active:shadow-lg
-      transition
-      duration-150
-      ease-in-out bg-gradient-to-t" @click="sendMsg()">Enviar</button>
+                        <button class=" w-full px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-100 hover:shadow-lg focus:bg-yellow-50 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-50 active:shadow-lg transition duration-150
+                                       ease-in-out bg-gradient-to-t" @click="sendMsg()">Enviar</button>
                             </div>
                         </div>
 
@@ -190,6 +134,10 @@ export default {
         //     this.selectedJobTitle = event.target.options[event.target.options.selectedIndex].text
         // },
         sendMsg() {
+            document.getElementById("exampleInput7").value="";
+            document.getElementById("exampleInput8").value="";
+            document.getElementById("exampleFormControlTextarea13").value="";
+
             this.$axios.post('https://api.telegram.org/bot5171770731:AAE37wm0BsTmWUXRcK35ShAi266CVJI3k34/sendMessage?chat_id=-1001636568775', {
                 chat_id: this.chat_id,
                 text: "Nombre: " + this.Nombre + " || Contacto: " + this.Contacto + " || Mensaje: " + this.Mensaje

@@ -57,7 +57,8 @@ export default {
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
-        "~/plugins/notifycations.js"
+        "~/plugins/notifycations.js",
+        { src: '~/plugins/vee-validate.js', ssr: true }
     ],
 
     // Target: https://go.nuxtjs.dev/config-target
@@ -96,7 +97,6 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-
-
+        transpile: ['vee-validate']
     },
 }
