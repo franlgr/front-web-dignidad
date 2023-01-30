@@ -6,7 +6,7 @@
         "dev": "nuxt",
         "build": "nuxt build",
         "start": "nuxt",
-        "generate": "npm run generate"
+        "generate": "yarn run generate"
     },
     "dependencies": {
         "@headlessui/vue": "^1.6.4",
